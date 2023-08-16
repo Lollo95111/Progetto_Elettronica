@@ -1,0 +1,199 @@
+
+  
+  body,html{
+    background: #000;
+    color:white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* NAVBAR */
+
+  
+  
+  .navbar-blur{
+      backdrop-filter: blur(9px) saturate(0.8);
+  }
+
+
+
+  .navbar-nav .nav-link {
+    color: white; /* Imposta il colore del testo bianco */
+    text-decoration: none; /* Rimuove il sottolineato */
+    border-bottom: 2px solid transparent; /* Imposta il bordo sotto trasparente di default */
+    transition: border-bottom 0.3s; /* Aggiungi una transizione per una transizione fluida */
+  }
+  
+  /* Stile per i link attivi */
+  
+  
+  /* Stile per il bordo bianco quando passi con il mouse sopra */
+  .navbar-nav .nav-link:hover {
+    border-bottom: 2px solid white; /* Imposta il bordo sotto bianco quando passi con il mouse sopra */
+  }
+
+
+
+
+
+
+
+  .video-bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+
+  .section{
+    
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .title{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-right: 25%;
+    transform: scale(1);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  opacity: 0;
+  }
+
+
+
+  .section.in-page .title{
+    transform: scale(1.2);
+  opacity: 1;
+  }
+
+
+
+
+/* pannello 1 */
+
+
+
+
+  .panel{
+    height: auto;
+    width: 100%;
+    background: #f7f7f7;;
+    position: relative;
+    z-index: 2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+.container{
+  width: 100%;max-width: 1000px;padding: 10% 10% 0% 10%;
+}
+
+
+.intro{
+font-size: 20px;font-weight: bold;
+}
+.title-bg{
+  font-size: 4rem;
+}
+
+.fade-in{
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.fade-in.in-page{
+  opacity: 1;
+  transform: translateY(0vh);
+}
+
+
+.appleWatch{
+  width: 80vw;
+  position: relative;
+  left: -60vw;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* pannello 2 */
+
+.panel2{
+  height: auto;
+  width: 100%;
+  background:rgba(207, 205, 205, 0.77);
+  position: relative;
+  z-index: 2;
+  color: #7a0101;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+
+.appleWatch2{
+  width: 70vw;
+  position: relative;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pannello 3 */
+
+.panel3{
+  height: auto;
+  width: 100%;
+  background:rgb(255, 255, 255);
+  position: relative;
+  z-index: 2;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+
+.appleWatch3{
+  width: 70vw;
+  position: relative;
+  display: block;
+}
